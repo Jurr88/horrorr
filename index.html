@@ -64,6 +64,26 @@
 .horror-element {
   animation: fadeIn 1s linear 0s 1 normal forwards, shake 0.5s linear infinite;
 }
+        .spiderweb {
+  position: absolute;
+  max-width: 100px;
+  opacity: 0;
+  pointer-events: none;
+  animation: fadeInOut 5s linear forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
     </style>
 </head>
 <body>
@@ -97,5 +117,23 @@
         <p>RenÃ©, de pompoenhovenier en speciaal biertjesliefhebber, zal zorgen voor het perfecte decor en de smakelijkste drankjes om te nuttigen terwijl we ons overgeven aan de gruwelen van de nacht.</p>
         <p>Jurriaan, de marathonloper en arabierenhoofd, zal ervoor zorgen dat niemand ontsnapt aan de griezelige sfeer, en zal ons op de been houden tot de laatste huiveringwekkende minuut.</p>
     </div>
+    <script>
+  function createSpiderWeb() {
+    const img = document.createElement('img');
+    img.src = 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fcreazilla.com%2Fnl%2Fsections%2F4-clipart%2Ftags%2F7168-spinnenweb&psig=AOvVaw3q8pMEhqYl8ixJmmWoHvKs&ust=1679150677492000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCIiB-_GZ4_0CFQAAAAAdAAAAABAg';
+    img.className = 'spiderweb';
+    img.style.left = Math.random() * (window.innerWidth - img.clientWidth) + 'px';
+    img.style.top = Math.random() * (window.innerHeight - img.clientHeight) + 'px';
+
+    document.body.appendChild(img);
+
+    setTimeout(() => {
+      document.body.removeChild(img);
+    }, 5000);
+  }
+
+  setInterval(createSpiderWeb, 2000);
+</script>
+
 </body>
 </html>
