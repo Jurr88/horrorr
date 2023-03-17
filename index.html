@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horrormarathon Uitnodiging</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Creepster', cursive;
+            background-color: #222;
+            color: #fff;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2rem;
+            color: #e50914;
+            margin-bottom: 1rem;
+        }
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 0.5rem;
+        }
+        .film {
+            font-weight: bold;
+        }
+        .horror-element {
+            display: inline-block;
+            font-size: 3rem;
+            margin: 0 0.5rem;
+        }
+        .person-description {
+            margin-top: 1.5rem;
+            font-size: 1.2rem;
+        }
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.horror-element {
+  animation: fadeIn 1s linear 0s 1 normal forwards, shake 0.5s linear infinite;
+}
+    </style>
+</head>
+<body>
+    <h1>Horrormarathon Uitnodiging</h1>
+    <h2>Programma</h2>
+    <ul>
+        <li>17:00 - 17:30: Aankomst en welkomstdrankje</li>
+        <li>17:30 - 18:15: Patat en snacks</li>
+        <li>18:15 - 18:30: Korte pauze en drankjes</li>
+        <li class="film">18:30 - 20:00: Eerste horrorfilm - Keuze Femke</li>
+        <li>20:00 - 20:20: Pauze en eerste shotjesronde</li>
+        <li class="film">20:20 - 21:50: Tweede horrorfilm - Keuze Dennis</li>
+        <li>21:50 - 22:10: Pauze en tweede shotjesronde</li>
+        <li class="film">22:10 - 23:40: Derde horrorfilm - Keuze Jurriaan</li>
+        <li>23:40 - 00:00: Pauze en laatste shotjesronde</li>
+        <li class="film">00:00 - 01:30: Vierde horrorfilm - Keuze RenÃ©</li>
+        <li>01:30 - 02:00: Chillen en napraten</li>
+        <li>02:00: Bedtijd</li>
+    </ul>
+    <div>
+        <span class="horror-element">ðŸ§›â€â™‚ï¸</span>
+        <span class="horror-element">ðŸ‘»</span>
+        <span class="horror-element">ðŸŽƒ</span>
+        <span class="horror-element">ðŸ•·ï¸</span>
+    </div>
+    <div class="person-description">
+        <p>Ontmoet de gastheren en -vrouw van deze huiveringwekkende avond:</p>
+        <p>Femke, de filmliefhebber en cocktailmeesteres die ons door de duisternis zal leiden met haar angstaanjagende filmkeuze.</p>
+        <p>Dennis, de pro-gamer en alfachad, wiens scherpe blik en snelle reflexen ons zullen beschermen tegen elke schrik tijdens de horrormarathon.</p>
+        <p>RenÃ©, de pompoenhovenier en speciaal biertjesliefhebber, zal zorgen voor het perfecte decor en de smakelijkste drankjes om te nuttigen terwijl we ons overgeven aan de gruwelen van de nacht.</p>
+        <p>Jurriaan, de marathonloper en arabierenhoofd, zal ervoor zorgen dat niemand ontsnapt aan de griezelige sfeer, en zal ons op de been houden tot de laatste huiveringwekkende minuut.</p>
+    </div>
+</body>
+</html>
