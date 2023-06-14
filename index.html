@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Creepster', cursive;
@@ -46,93 +47,7 @@
             margin: 0 0.5rem;
         }
 
-        .person-description {
-            margin-top: 1.5rem;
-            font-size: 1.2rem;
-        }
-
-        @keyframes shake {
-            0% {
-                transform: translate(1px, 1px) rotate(0deg);
-            }
-
-            10% {
-                transform: translate(-1px, -2px) rotate(-1deg);
-            }
-
-            20% {
-                transform: translate(-3px, 0px) rotate(1deg);
-            }
-
-            30% {
-                transform: translate(3px, 2px) rotate(0deg);
-            }
-
-            40% {
-                transform: translate(1px, -1px) rotate(1deg);
-            }
-
-            50% {
-                transform: translate(-1px, 2px) rotate(-1deg);
-            }
-
-            60% {
-                transform: translate(-3px, 1px) rotate(0deg);
-            }
-
-            70% {
-                transform: translate(3px, 1px) rotate(-1deg);
-            }
-
-            80% {
-                transform: translate(-1px, -1px) rotate(1deg);
-            }
-
-            90% {
-                transform: translate(1px, 2px) rotate(0deg);
-            }
-
-            100% {
-                transform: translate(1px, -2px) rotate(-1deg);
-            }
-        }
-
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-            }
-
-            100% {
-                opacity: 1;
-            }
-        }
-
-        .horror-element {
-            animation: fadeIn 1s linear 0s 1 normal forwards, shake 0.5s linear infinite;
-        }
-
-        .spiderweb {
-            position: absolute;
-            max-width: 100px;
-            opacity: 0;
-            pointer-events: none;
-            animation: fadeInOut 5s linear forwards;
-        }
-
-        @keyframes fadeInOut {
-            0% {
-                opacity: 0;
-            }
-
-            50% {
-                opacity: 1;
-            }
-
-            100% {
-                opacity: 0;
-            }
-        }
-
+        /* Add the rest of your CSS here */
     </style>
 </head>
 
@@ -140,41 +55,27 @@
     <h1>Horrormarathon Uitnodiging</h1>
     <h2>Programma</h2>
     <ul>
-        <li>17:00 - 17:30: Aankomst en welkomstdrankje</li>
-        <li>17:30 - 18:15: Patat en snacks</li>
-        <li>18:15 - 18:30: Korte pauze en drankjes</li>
-        <li class="film">18:30 - 20:00: Eerste horrorfilm - Keuze Femke</li>
-        <li>20:00 - 20:20: Pauze en eerste shotjesronde</li>
-        <li class="film">20:20 - 21:50: Tweede horrorfilm - Keuze Dennis</li>
-        <li>21:50 - 22:10: Pauze en tweede shotjesronde</li>
-        <li class="film">22:10 - 23:40: Derde horrorfilm - Keuze Jurriaan</li>
-        <li>23:40 - 00:00: Pauze en laatste shotjesronde</li>
-        <li class="film">00:00 - 01:30: Vierde horrorfilm - Keuze René</li>
-        <li>01:30 - 02:00: Chillen en napraten</li>
-        <li>02:00: Bedtijd</li>
+        <!-- Add the rest of your HTML content here -->
     </ul>
+
     <iframe width="560" height="315" src="https://www.youtube.com/embed/32Zvw20y3Ys" title="YouTube video player"
         frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
-    <div>
-        <span class="horror-element">&#x1F9DB;&#x200D;&#x2642;&#xFE0F;</span>
-        <span class="horror-element">&#x1F47B;</span>
-        <span class="horror-element">&#x1F383;</span>
-        <span class="horror-element">&#x1F577;&#xFE0F;</span>
-    </div>
-    <div class="person-description">
-        <p>Ontmoet de gastheren en -vrouw van deze huiveringwekkende avond:</p>
-        <p>Femke, de filmliefhebber en cocktailmeesteres die ons door de duisternis zal leiden met haar angstaanjagende
-            filmkeuze.</p>
-        <p>Dennis, de pro-gamer en alfachad, wiens scherpe blik en snelle reflexes ons zullen beschermen tegen elke
-            schrik tijdens de horrormarathon.</p>
-        <p>René, de pompoenhovenier en speciaal biertjesliefhebber, zal zorgen voor het perfecte decor en de smakelijkste
-            drankjes om te nuttigen terwijl we ons overgeven aan de gruwelen van de nacht.</p>
-        <p>Jurriaan, de marathonloper en arabierenhoofd, zal ervoor zorgen dat niemand ontsnapt aan de griezelige sfeer,
-            en zal ons op de been houden tot de laatste huiveringwekkende minuut.</p>
-    </div>
-    <script src="path/to/your/chatbot/script.js"></script>
+
+    <!-- Add the rest of your HTML content here -->
+
+    <!-- Add Chatbot iframe and scripts -->
+    <iframe src="https://www.chatbase.co/chatbot-iframe/3avau_JvutE42NYmaDGg2" width="100%" height="700"
+        frameborder="0"></iframe>
+
+    <script>
+        window.chatbaseConfig = {
+            chatbotId: "3avau_JvutE42NYmaDGg2",
+        }
+    </script>
+    <script src="https://www.chatbase.co/embed.min.js" id="3avau_JvutE42NYmaDGg2" defer></script>
+
 </body>
 
 </html>
